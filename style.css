@@ -292,3 +292,9 @@ footer a{color:rgba(255,255,255,.8)}
 .xcard .thumb.wire:active{cursor:grabbing}
 .xcard .thumb.wire canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
 .xcard .thumb.wire .hint{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);pointer-events:none;z-index:1}
+
+/* project cards: repo link, proof-of-concept note, code screenshots */
+.xcard .repo{display:inline-block;margin-top:12px;font-family:var(--head);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+.xcard .repo:hover{opacity:.7}
+.xcard .note{font-size:13px;color:var(--muted);font-style:italic;margin-top:12px;line-height:1.45}
+.xcard .thumb img.code{object-fit:cover;object-position:left top;background:#0d1117}
