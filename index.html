@@ -104,16 +104,56 @@
 </section>
 
 <!-- ================= OUTSIDE THE LAB ================= -->
-<section class="outside">
-  <div class="sec-title"><h2>Outside the Lab</h2></div>
-  <div class="cards">
-    <div class="card"><div class="k">On the wall</div><h3>Rock climbing</h3><p>Climbing is problem-solving with my whole body: read the route, try it, fall, adjust, try again.</p></div>
-    <div class="card"><div class="k">On the strings</div><h3>Ukulele</h3><p>Four strings, endless songs. I play to unwind after a long day at the bench.</p></div>
-    <div class="card"><div class="k">In the kitchen</div><h3>Cooking</h3><p>Recipes are just procedures with room to experiment, and the results are better than most prototypes.</p></div>
-    <div class="card"><div class="k">Behind the camera</div><h3>Videography</h3><p>I shoot and edit short-form videos, framing, pacing and all, the same way I'd tune a design.</p></div>
-    <div class="card wide"><div class="k">Up close</div><h3>Obsessed with the details</h3><p>I can spend ages studying a detailed scale model, noticing every panel line and part. It's the same eye I bring to a schematic.</p></div>
+<section class="outside" id="outside">
+  <div class="sec-title"><h2>Outside the Lab</h2><p>Tap a story.</p></div>
+  <div class="stories">
+    <button class="story" type="button" data-type="image" data-src="assets/stories/climbing.jpg" data-audio="0" data-caption="Rock Climbing">
+      <span class="ring"><img src="assets/stories/climbing-thumb.jpg" alt="" loading="lazy"></span>
+      <span class="cap">Rock Climbing</span>
+    </button>
+    <button class="story" type="button" data-type="image" data-src="assets/stories/spiderman.jpg" data-audio="0" data-caption="Dressing up as Spiderman in a suit for Halloween">
+      <span class="ring"><img src="assets/stories/spiderman-thumb.jpg" alt="" loading="lazy"></span>
+      <span class="cap">Dressing up as Spiderman in a suit for Halloween</span>
+    </button>
+    <button class="story" type="button" data-type="video" data-src="assets/stories/ukulele.mp4" data-audio="1" data-caption="Playing Ukelele">
+      <span class="ring"><img src="assets/stories/ukulele-thumb.jpg" alt="" loading="lazy"></span>
+      <span class="cap">Playing Ukelele</span>
+    </button>
+    <button class="story" type="button" data-type="video" data-src="assets/stories/birthday.mp4" data-audio="1" data-caption="Happy Birthday">
+      <span class="ring"><img src="assets/stories/birthday-thumb.jpg" alt="" loading="lazy"></span>
+      <span class="cap">Happy Birthday</span>
+    </button>
+    <button class="story" type="button" data-type="video" data-src="assets/stories/cooking.mp4" data-audio="0" data-caption="Cooking">
+      <span class="ring"><img src="assets/stories/cooking-thumb.jpg" alt="" loading="lazy"></span>
+      <span class="cap">Cooking</span>
+    </button>
+    <button class="story" type="button" data-type="video" data-src="assets/stories/details-1.mp4" data-audio="0" data-caption="Obsessing over tiny details">
+      <span class="ring"><img src="assets/stories/details-1-thumb.jpg" alt="" loading="lazy"></span>
+      <span class="cap">Obsessing over tiny details</span>
+    </button>
+    <button class="story" type="button" data-type="video" data-src="assets/stories/details-2.mp4" data-audio="0" data-caption="Obsessing over tiny details yet again">
+      <span class="ring"><img src="assets/stories/details-2-thumb.jpg" alt="" loading="lazy"></span>
+      <span class="cap">Obsessing over tiny details yet again</span>
+    </button>
+    <button class="story" type="button" data-type="video" data-src="assets/stories/influencer.mp4" data-audio="0" data-caption="Trying Influencer style videography">
+      <span class="ring"><img src="assets/stories/influencer-thumb.jpg" alt="" loading="lazy"></span>
+      <span class="cap">Trying Influencer style videography</span>
+    </button>
   </div>
 </section>
+
+<!-- story viewer -->
+<div class="sv" id="sv" hidden role="dialog" aria-modal="true" aria-label="Story viewer">
+  <div class="sv-frame">
+    <div class="sv-bars"></div>
+    <button class="sv-close" type="button" aria-label="Close">×</button>
+    <button class="sv-mute" type="button" aria-label="Unmute" hidden>🔇</button>
+    <div class="sv-stage"></div>
+    <button class="sv-prev" type="button" aria-label="Previous story"></button>
+    <button class="sv-next" type="button" aria-label="Next story"></button>
+    <div class="sv-cap"></div>
+  </div>
+</div>
 
 <section class="closing">
   <h2>Want to see more?</h2>
@@ -124,5 +164,6 @@
   </div>
 </section>
 <footer>Ali Asjad Syed · <a href="mailto:aas459@drexel.edu">aas459@drexel.edu</a> · Philadelphia, PA</footer>
+<script src="stories.js" defer></script>
 </body>
 </html>
