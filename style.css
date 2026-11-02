@@ -281,3 +281,14 @@ footer a{color:rgba(255,255,255,.8)}
 .xcard{align-items:start}
 .xcard .thumb{height:150px;min-height:0;align-self:start}
 @media (max-width:460px){.xcard .thumb{height:190px}}
+
+/* ---------- v4 additions ---------- */
+.hero-photo{width:136px;height:136px;border-radius:50%;object-fit:cover;margin:0 auto 22px;border:3px solid rgba(255,255,255,.9);box-shadow:0 8px 30px rgba(0,0,0,.35)}
+.award{align-items:start;padding:16px}
+.award .place{font-family:var(--head);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
+.award b{font-size:16px}
+.award p{margin-top:6px}
+.xcard .thumb.wire{background:var(--navy);cursor:grab;overflow:hidden}
+.xcard .thumb.wire:active{cursor:grabbing}
+.xcard .thumb.wire canvas{position:absolute;inset:0;width:100%!important;height:100%!important;display:block}
+.xcard .thumb.wire .hint{position:absolute;left:0;right:0;bottom:6px;text-align:center;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.55);pointer-events:none;z-index:1}

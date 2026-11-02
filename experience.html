@@ -19,7 +19,6 @@
   <ul>
     <li><a href="index.html">About Me</a></li>
     <li><a class="active" href="experience.html">Experience</a></li>
-    <li><a href="resume.html">Résumé</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
@@ -113,7 +112,10 @@
     </article>
 
     <article class="xcard" id="zhou">
-      <div class="thumb"><video src="assets/zhou-robot.mp4" poster="assets/zhou-poster.jpg" autoplay muted loop playsinline aria-label="VR teleoperation of the robot"></video></div>
+      <div class="thumb wire" data-stl="assets/gripper-link7.stl" title="Drag to rotate">
+        <img src="assets/gripper-wireframe.png" alt="Wireframe of the IMETA Y1 robot gripper">
+        <span class="hint">drag to rotate</span>
+      </div>
       <div class="body">
         <h3>Vision-Language-Action Models in Robotics</h3>
         <div class="org">Zhou Robotics Lab · Robotic Manipulation</div>
@@ -131,12 +133,13 @@
             <li>Redesigned the robot’s gripper in SolidWorks to fit task-specific lab experiments, then 3D-printed it.</li>
           </ul>
           <p class="tools">ROS · Linux · OpenCV · PyTorch · JAX · CAN · SolidWorks</p>
+          <p class="credit">Wireframe: stock IMETA Y1 gripper (link 7) from IMETA Robotics’ y1_sdk, BSD license</p>
         </details>
       </div>
     </article>
 
     <article class="xcard" id="lunabotics">
-      <div class="thumb"><img src="assets/lunabotics.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">LUNABOTICS</span></div>
+      <div class="thumb"><img src="assets/lunabotics.jpg" alt="Lunabotics rover being wired" onerror="miss(this,'tile')" style="object-position:40% 70%"><span class="fallback">LUNABOTICS</span></div>
       <div class="body">
         <h3>Computer Science Subteam</h3>
         <div class="org">NASA Lunabotics · Drexel University</div>
@@ -150,7 +153,7 @@
     </article>
 
     <article class="xcard" id="barclays">
-      <div class="thumb"><img src="assets/barclays.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">DATA</span></div>
+      <div class="thumb"><img src="assets/barclays.jpg" alt="Barclays co-op team" onerror="miss(this,'tile')" style="object-position:46% 35%"><span class="fallback">DATA</span></div>
       <div class="body">
         <h3>Data Analyst (Co-op)</h3>
         <div class="org">Barclays US Consumer Bank · Marlette Funding</div>
@@ -283,7 +286,7 @@
   <div class="xgrid">
 
     <article class="xcard">
-      <div class="thumb"><img src="assets/vla.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">ICLR 2027</span></div>
+      <div class="thumb"><video src="assets/zhou-robot.mp4" poster="assets/zhou-poster.jpg" autoplay muted loop playsinline aria-label="VR teleoperation collecting robot demonstrations"></video></div>
       <div class="body">
         <h3>Sequence-Level Policy Optimization for VLA Models</h3>
         <div class="org">Second Author · ICLR 2027 Workshop Paper (manuscript in preparation)</div>
@@ -300,7 +303,7 @@
     </article>
 
     <article class="xcard">
-      <div class="thumb"><img src="assets/bci.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">BCI</span></div>
+      <div class="thumb"><img src="assets/bci.jpg" alt="EEG cap and fNIRS headband" onerror="miss(this,'tile')" style="object-position:28% center"><span class="fallback">BCI</span></div>
       <div class="body">
         <h3>Brain-Computer Interfaces</h3>
         <div class="org">Undergraduate Researcher · CONQUER Collaborative, Drexel School of Biomedical Engineering &amp; Science</div>
@@ -311,6 +314,7 @@
             <li>Filtering and classifying EEG and fNIRS signals with Python machine learning libraries to decode a user’s commands.</li>
           </ul>
           <p class="tools">EEG · fNIRS · Python · Signal Processing · Machine Learning</p>
+          <p class="credit">Image: CONQUER Collaborative</p>
         </details>
       </div>
     </article>
@@ -322,37 +326,49 @@
 <section class="xsec" id="awards">
   <h2>Awards &amp; Activities</h2>
   <div class="awards">
-    <div class="award">
+    <article class="award">
       <div class="thumb"><img src="assets/award-jnj.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">🏆</span></div>
-      <div><b>1st Place · Johnson &amp; Johnson Case (2025)</b><p>Pitched a $1.73B biotech startup acquisition proposal to judges at Drexel University.</p></div>
-    </div>
-    <div class="award">
+      <div>
+        <div class="place">1st Place · 2025</div>
+        <b>Johnson &amp; Johnson Case Competition</b>
+        <p>A business case competition at Drexel University. Pitched a $1.73B acquisition proposal for a biotech startup to a panel of judges, and took first place.</p>
+      </div>
+    </article>
+    <article class="award">
       <div class="thumb"><img src="assets/award-pwc.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">🥈</span></div>
-      <div><b>2nd Place, Case Lead · PwC Drexel Challenge (2025)</b><p>Presented a secure software modernization plan for an aerospace firm.</p></div>
-    </div>
-    <div class="award">
+      <div>
+        <div class="place">2nd Place · Case Lead · 2025</div>
+        <b>PwC Drexel Challenge</b>
+        <p>A case competition run by PwC with General Electric. As case lead, presented a secure software modernization plan for an aerospace firm.</p>
+      </div>
+    </article>
+    <article class="award">
       <div class="thumb"><img src="assets/award-iymc.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">∑</span></div>
-      <div><b>Pre-Finalist · International Youth Math Challenge (2024)</b></div>
-    </div>
-    <div class="award">
+      <div>
+        <div class="place">Pre-Finalist · 2024</div>
+        <b>International Youth Math Challenge</b>
+        <p>An international mathematics competition run in elimination rounds. Advanced past the qualification round to the pre-final round.</p>
+      </div>
+    </article>
+    <article class="award">
       <div class="thumb"><img src="assets/award-climate.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">🌍</span></div>
-      <div><b>Quarter-Finalist · Climate Science Olympiad (2024)</b></div>
-    </div>
-    <div class="award">
-      <div class="thumb"><img src="assets/award-ambassador.jpg" alt="" onerror="miss(this,'tile')"><span class="fallback">🎓</span></div>
-      <div><b>Drexel University Student Ambassador</b></div>
-    </div>
+      <div>
+        <div class="place">Quarter-Finalist · 2024</div>
+        <b>Climate Science Olympiad</b>
+        <p>An international competition on climate science and climate solutions. Reached the quarter-final round.</p>
+      </div>
+    </article>
   </div>
 </section>
 
 <section class="closing">
-  <h2>Want the one-page version?</h2>
-  <p>Everything here, condensed into my résumé.</p>
+  <h2>Want to talk about any of this?</h2>
+  <p>I’m always happy to go deeper on a project or a piece of research.</p>
   <div class="ctas">
-    <a class="btn-solid" href="resume.html">Résumé</a>
-    <a class="btn-outline" href="contact.html">Get in touch</a>
+    <a class="btn-solid" href="contact.html">Get in touch</a>
   </div>
 </section>
 <footer>Ali Asjad Syed · <a href="mailto:aas459@drexel.edu">aas459@drexel.edu</a> · Philadelphia, PA</footer>
+<script src="wire.js" defer></script>
 </body>
 </html>
