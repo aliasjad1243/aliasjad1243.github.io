@@ -298,3 +298,9 @@ footer a{color:rgba(255,255,255,.8)}
 .xcard .repo:hover{opacity:.7}
 .xcard .note{font-size:13px;color:var(--muted);font-style:italic;margin-top:12px;line-height:1.45}
 .xcard .thumb img.code{object-fit:cover;object-position:left top;background:#0d1117}
+
+/* hero headshot: sit higher, keep the face framed inside the circle */
+.hero .inner{padding-top:72px}
+.hero-photo{display:block;margin:0 auto 20px;object-position:50% 30%}
+.card.wide{grid-column:1/-1}
+@media (max-width:640px){.hero .inner{padding-top:84px}}
