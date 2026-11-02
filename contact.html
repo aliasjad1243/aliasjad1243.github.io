@@ -28,7 +28,23 @@
 </header>
 
 <div class="contact-wrap">
-  <p class="lead">The fastest way to reach me is email.</p>
+  <p class="lead">Send me a message right here — it goes straight to my inbox.</p>
+
+  <form class="cform" id="cform" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="e745d0ee-dd4e-42f8-96b7-de1516de8216">
+    <input type="hidden" name="subject" value="New message from your portfolio site">
+    <input type="hidden" name="from_name" value="aliasjad1243.github.io">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="row2">
+      <label>Name<input type="text" name="name" required autocomplete="name" placeholder="Your name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email" placeholder="you@example.com"></label>
+    </div>
+    <label>Message<textarea name="message" required rows="6" placeholder="What would you like to talk about?"></textarea></label>
+    <button class="btn-solid dark" type="submit">Send message</button>
+    <p class="cstatus" id="cstatus" role="status" aria-live="polite"></p>
+  </form>
+
+  <p class="or">Or reach me here:</p>
   <div class="clinks">
     <a href="mailto:aas459@drexel.edu">Email <span>aas459@drexel.edu ↗</span></a>
     <a href="https://www.linkedin.com/in/syed-ali-43910a350/" target="_blank" rel="noopener">LinkedIn <span>/in/syed-ali-43910a350 ↗</span></a>
@@ -37,5 +53,22 @@
 </div>
 
 <footer>Ali Asjad Syed · Philadelphia, PA</footer>
+<script>
+(function(){
+  const f = document.getElementById('cform'), st = document.getElementById('cstatus'), btn = f.querySelector('button');
+  f.addEventListener('submit', async e => {
+    e.preventDefault();
+    btn.disabled = true; btn.textContent = 'Sending…'; st.className = 'cstatus'; st.textContent = '';
+    try {
+      const r = await fetch(f.action, {method:'POST', headers:{'Accept':'application/json'}, body:new FormData(f)});
+      const j = await r.json();
+      if (!j.success) throw new Error(j.message || 'Failed');
+      f.reset(); st.classList.add('ok'); st.textContent = 'Message sent ✓ Thanks for reaching out, I’ll get back to you soon.';
+    } catch (err) {
+      st.classList.add('err'); st.textContent = 'Something went wrong. Please try again, or email me at aas459@drexel.edu.';
+    } finally { btn.disabled = false; btn.textContent = 'Send message'; }
+  });
+})();
+</script>
 </body>
 </html>
