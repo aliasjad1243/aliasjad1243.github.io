@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Experience — Ali Asjad Syed</title>
+<meta name="description" content="Experience, research, projects and coursework of Ali Asjad Syed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%231f2a44'/><text x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='white' text-anchor='middle'>AS</text></svg>">
+<link rel="stylesheet" href="style.css">
+<script src="site.js"></script>
+</head>
+<body>
+
+<nav>
+  <a class="name" href="index.html">Ali Asjad Syed</a>
+  <ul>
+    <li><a href="index.html">About Me</a></li>
+    <li><a class="active" href="experience.html">Experience</a></li>
+    <li><a href="resume.html">Résumé</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<header class="band">
+  <img src="assets/fsae-car.jpg" alt="" onerror="miss(this)" style="object-position:center 60%">
+  <div class="inner">
+    <h1 class="caps">Experience</h1>
+    <p>Teams, labs, research and the things I’ve built along the way.</p>
+  </div>
+</header>
+
+<div class="subnav">
+  <ul>
+    <li><a href="#work">Experience</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#coursework">Coursework</a></li>
+    <li><a href="#toolbox">Toolbox</a></li>
+  </ul>
+</div>
+
+<!-- ================= EXPERIENCE ================= -->
+<div class="group-title" id="work"><h2>Experience</h2></div>
+<div class="entries">
+
+  <article class="entry" id="der">
+    <div class="banner"><img src="assets/fsae-car.jpg" alt="Drexel Electric Racing car #52" onerror="miss(this)" style="object-position:center 62%"><span class="word">FSAE</span></div>
+    <div class="row">
+      <img class="main" src="assets/der-main.jpg" alt="" onerror="miss(this,'photo')">
+      <div class="text">
+        <h3>Embedded Firmware &amp; Low Voltage<br>Electrical Team</h3>
+        <p class="summary">Firmware and low-voltage electronics for Drexel’s Formula SAE electric race car.</p>
+        <div class="stats">
+          <div><b>195</b><span>channels read over SPI</span></div>
+          <div><b>32</b><span>analog inputs on the DAQ board</span></div>
+        </div>
+        <p class="org">Drexel Electric Racing</p>
+        <p class="date">August 2026 – Present</p>
+        <p class="tools">STM32 · FreeRTOS · C · SPI · CAN · Altium</p>
+      </div>
+    </div>
+    <details>
+      <summary>What I do</summary>
+      <ul>
+        <li>Co-developed STM32 firmware (FreeRTOS) with CRC-checked SPI drivers reading 195 channels from daisy-chained ICs.</li>
+        <li>Debug board-level SPI and CAN bus faults on the bench with an oscilloscope, logic analyzer and multimeter.</li>
+        <li>Helped design the Altium schematic of a Teensy 4.1 DAQ board with 32 analog inputs over I²C and a CAN transceiver.</li>
+      </ul>
+    </details>
+    <div class="media">
+      <figure><img src="assets/der-1.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Bench debugging</figcaption></figure>
+      <figure><img src="assets/der-2.jpg" alt="" onerror="miss(this,'remove')"><figcaption>DAQ board</figcaption></figure>
+      <figure><img src="assets/der-3.jpg" alt="" onerror="miss(this,'remove')"><figcaption>At competition</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="entry" id="zhou">
+    <div class="banner"><img src="assets/zhou-banner.jpg" alt="" onerror="miss(this)"><span class="word">Robotics</span></div>
+    <div class="row">
+      <video class="main" src="assets/zhou-robot.mp4" poster="assets/zhou-poster.jpg" autoplay muted loop playsinline aria-label="Teleoperating the robot with a VR headset"></video>
+      <div class="text">
+        <h3>Vision-Language-Action Models<br>in Robotics</h3>
+        <p class="summary">Training a 14-DoF dual-arm robot to manipulate objects from camera views and language instructions, using demonstrations collected through VR teleoperation.</p>
+        <div class="stats">
+          <div><b>29,804</b><span>training frames</span></div>
+          <div><b>61</b><span>teleoperated demos</span></div>
+          <div><b>30 FPS</b><span>on 3 cameras</span></div>
+        </div>
+        <p class="org">Zhou Robotics Lab</p>
+        <p class="date">July 2026 – Present</p>
+        <p class="tools">ROS · Linux · OpenCV · PyTorch · JAX · SolidWorks</p>
+      </div>
+    </div>
+    <details>
+      <summary>What I do</summary>
+      <ul>
+        <li>Applied OpenCV contour detection on 3 camera streams at 30 FPS to locate a marker pen and its lid.</li>
+        <li>Contributed to fine-tuning a VLA model on 29,804 frames from 3 camera views using JAX/PyTorch on the lab’s GPUs.</li>
+        <li>Collected 61 teleoperated demonstrations through ROS on Linux and tested closed-loop control of all 14 joints over CAN.</li>
+        <li>Redesigned the robot’s gripper in SolidWorks to fit task-specific lab experiments, then 3D-printed it.</li>
+      </ul>
+    </details>
+  </article>
+
+  <article class="entry" id="lunabotics">
+    <div class="banner"><img src="assets/lunabotics-banner.jpg" alt="" onerror="miss(this)"><span class="word">Lunabotics</span></div>
+    <div class="row">
+      <img class="main" src="assets/lunabotics-main.jpg" alt="" onerror="miss(this,'photo')">
+      <div class="text">
+        <h3>Computer Science Subteam</h3>
+        <p class="summary">Software for Drexel’s entry in NASA’s Lunabotics challenge, a competition to build a robot that works in lunar-like terrain.</p>
+        <p class="org">NASA Lunabotics · Drexel University</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="entry" id="barclays">
+    <div class="banner"><img src="assets/barclays-banner.jpg" alt="" onerror="miss(this)"><span class="word">Barclays</span></div>
+    <div class="row">
+      <img class="main" src="assets/barclays-main.jpg" alt="" onerror="miss(this,'photo')">
+      <div class="text">
+        <h3>FP&amp;A Data Analyst<br>Co-op</h3>
+        <p class="summary">Consolidated over a decade of loan data into dashboards and automated recurring reporting.</p>
+        <div class="stats">
+          <div><b>12 yrs</b><span>of loan records</span></div>
+          <div><b>5 hrs/wk</b><span>reporting time saved</span></div>
+        </div>
+        <p class="org">Barclays US Consumer Bank · Marlette Funding</p>
+        <p class="date">March 2026 – September 2026</p>
+        <p class="tools">SQL · Snowflake · Power BI · Python · Excel</p>
+      </div>
+    </div>
+    <details>
+      <summary>What I did</summary>
+      <ul>
+        <li>Wrote SQL queries in Snowflake to consolidate 12 years of loan records for Power BI dashboards on 4 monthly KPIs.</li>
+        <li>Automated recurring Snowflake data pulls with Power Query and Python, saving 5 hours of reporting per week.</li>
+      </ul>
+    </details>
+  </article>
+</div>
+
+<!-- ================= RESEARCH ================= -->
+<div class="group-title" id="research"><h2>Research</h2></div>
+<div class="entries">
+
+  <article class="entry">
+    <div class="banner"><img src="assets/vla-banner.jpg" alt="" onerror="miss(this)"><span class="word">ICLR 2027</span></div>
+    <div class="row">
+      <img class="main" src="assets/vla-main.jpg" alt="" onerror="miss(this,'photo')">
+      <div class="text">
+        <h3>Improving RL Post-Training for VLA Models Through Sequence-Level Policy Optimization</h3>
+        <p class="summary">Adapting Group Sequence Policy Optimization (GSPO) to robot action sequences in the RLinf framework, and benchmarking it against the GRPO baseline for task success and training stability.</p>
+        <p class="org">Second Author · ICLR 2027 Workshop Paper</p>
+        <p class="date">Manuscript in preparation · July 2026 – Present</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="entry">
+    <div class="banner"><img src="assets/bci-banner.jpg" alt="" onerror="miss(this)"><span class="word">BCI</span></div>
+    <div class="row">
+      <img class="main" src="assets/bci-main.jpg" alt="" onerror="miss(this,'photo')">
+      <div class="text">
+        <h3>Brain-Computer Interfaces<br>Undergraduate Researcher</h3>
+        <p class="summary">Setting up wearable fNIRS and EEG sensors for human-subject studies, then filtering and classifying the signals with Python ML libraries to decode a user’s commands.</p>
+        <p class="org">CONQUER Collaborative · Drexel School of Biomedical Engineering</p>
+        <p class="date">October 2026 – Present</p>
+      </div>
+    </div>
+  </article>
+</div>
+
+<!-- ================= PROJECTS ================= -->
+<div class="group-title" id="projects"><h2>Projects</h2></div>
+<div class="entries">
+
+  <article class="entry" id="pulsewatch">
+    <div class="banner"><img src="assets/pulsewatch-banner.jpg" alt="" onerror="miss(this)"><span class="word">PulseWatch</span></div>
+    <div class="row">
+      <img class="main" src="assets/pulsewatch-main.jpg" alt="PulseWatch" onerror="miss(this,'photo')">
+      <div class="text">
+        <h3>Heart Rate &amp; Blood Oxygen<br>Watch</h3>
+        <p class="summary">An STM32 watch with an optical pulse sensor, OLED display, Li-Po charger and Bluetooth, streaming its readings to a laptop.</p>
+        <div class="stats">
+          <div><b>100 Hz</b><span>sampling over I²C</span></div>
+          <div><b>≤ 2 bpm</b><span>vs. store-bought monitor</span></div>
+          <div><b>≤ 2 pts</b><span>SpO₂ vs. same monitor</span></div>
+        </div>
+        <p class="date">June 2026 – August 2026</p>
+        <p class="tools">STM32 · C · I²C · Bluetooth · Python · MATLAB</p>
+        <p class="credit">Built on the open-source open-watch project</p>
+      </div>
+    </div>
+    <details>
+      <summary>What I did</summary>
+      <ul>
+        <li>Brought up the board: MAX30102 optical sensor, OLED display, Li-Po charger and Bluetooth module.</li>
+        <li>Updated the stock C firmware (STM32 HAL) to sample at 100 Hz over I²C and stream the data via Bluetooth.</li>
+        <li>Implemented heart-rate and SpO₂ algorithms in Python/MATLAB, within 2 bpm and 2 points of a store-bought monitor.</li>
+      </ul>
+    </details>
+    <div class="media">
+      <figure><img src="assets/pulsewatch-1.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Board bring-up</figcaption></figure>
+      <figure><img src="assets/pulsewatch-2.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Live pulse signal</figcaption></figure>
+      <figure><img src="assets/pulsewatch-3.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Checking against a commercial monitor</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="entry" id="pcr">
+    <div class="banner"><img src="assets/pcr-banner.jpg" alt="" onerror="miss(this)"><span class="word">PCR</span></div>
+    <div class="row">
+      <img class="main" src="assets/pcr-main.jpg" alt="Portable PCR machine" onerror="miss(this,'photo')">
+      <div class="text">
+        <h3>Portable PCR Machine<br>DNA Thermocycler</h3>
+        <p class="summary">A USB-powered machine that cycles a heater block through the three DNA-amplification temperatures under PID control.</p>
+        <div class="stats">
+          <div><b>95 · 60 · 72 °C</b><span>cycle setpoints</span></div>
+          <div><b>± 1 °C</b><span>hold accuracy</span></div>
+        </div>
+        <p class="date">April 2026 – May 2026</p>
+        <p class="tools">C++ · PID Control · KiCad · LTspice · AutoCAD · SolidWorks</p>
+        <p class="credit">Built on the open-source PocketPCR project</p>
+      </div>
+    </div>
+    <details>
+      <summary>What I did</summary>
+      <ul>
+        <li>Modified the KiCad schematic and simulated the MOSFET heater driver in LTspice.</li>
+        <li>Refactored the Arduino firmware into object-oriented C++ PID and sensor classes with unit tests and Git.</li>
+        <li>Drafted a thermocouple fixture in AutoCAD from the heater-block DXF and modelled it in SolidWorks for repeatable tests.</li>
+        <li>Tuned the PID heater and PWM fan control to hold 95, 60 and 72 °C within 1 °C, checked with a reference thermocouple.</li>
+      </ul>
+    </details>
+    <div class="media">
+      <figure><img src="assets/pcr-1.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Heater block and fan</figcaption></figure>
+      <figure><img src="assets/pcr-2.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Thermocouple fixture</figcaption></figure>
+      <figure><img src="assets/pcr-3.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Temperature across cycles</figcaption></figure>
+    </div>
+  </article>
+
+  <article class="entry" id="meter">
+    <div class="banner"><img src="assets/meter-banner.jpg" alt="" onerror="miss(this)"><span class="word">Colorimeter</span></div>
+    <div class="row">
+      <img class="main" src="assets/meter-main.jpg" alt="Liquid concentration meter" onerror="miss(this,'photo')">
+      <div class="text">
+        <h3>Liquid Concentration Meter<br>Light-Based Colorimeter</h3>
+        <p class="summary">Shines LED light through a sample and reads it with a light sensor to work out how concentrated the liquid is.</p>
+        <div class="stats">
+          <div><b>6</b><span>dye standards</span></div>
+          <div><b>≤ 2 %</b><span>repeatability over 10 trials</span></div>
+        </div>
+        <p class="date">December 2025 – February 2026</p>
+        <p class="tools">CircuitPython · I²C · KiCad · Creo · Python · Soldering</p>
+        <p class="credit">Built on the open-source open_colorimeter project</p>
+      </div>
+    </div>
+    <details>
+      <summary>What I did</summary>
+      <ul>
+        <li>Hand-soldered the KiCad LED board and wired a TSL2591 light sensor over I²C.</li>
+        <li>Compared 3 tube-holder designs modelled in Creo to block outside light and seat each tube consistently.</li>
+        <li>Customized the CircuitPython firmware to stream readings to a laptop over USB serial for live logging.</li>
+        <li>Built Python calibration curves from 6 known dye concentrations, repeatable to within 2% over 10 trials.</li>
+      </ul>
+    </details>
+    <div class="media">
+      <figure><img src="assets/meter-1.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Hand-soldered LED board</figcaption></figure>
+      <figure><img src="assets/meter-2.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Dye standards</figcaption></figure>
+      <figure><img src="assets/meter-3.jpg" alt="" onerror="miss(this,'remove')"><figcaption>Calibration curve</figcaption></figure>
+    </div>
+  </article>
+</div>
+
+<!-- ================= COURSEWORK ================= -->
+<div class="group-title" id="coursework"><h2>Coursework</h2></div>
+<div class="list-block">
+  <div class="course"><b>ECE 105 · Programming for Engineers II</b><span>Python</span></div>
+  <div class="course"><b>PHYS 102 · Physics II</b><span>Fall 2026</span></div>
+</div>
+
+<!-- ================= TOOLBOX ================= -->
+<div class="group-title" id="toolbox"><h2>Toolbox</h2></div>
+<div class="list-block" style="padding-bottom:100px">
+  <dl class="tool-grid">
+    <dt>CAD &amp; Fabrication</dt><dd>SolidWorks, AutoCAD, Creo, 3D printing, soldering</dd>
+    <dt>Electronics</dt><dd>Altium, KiCad, LTspice, oscilloscope, logic analyzer, multimeter</dd>
+    <dt>Programming</dt><dd>C, C++, Python, SQL, MATLAB</dd>
+    <dt>Embedded</dt><dd>STM32, FreeRTOS, CAN, SPI, I²C, Bluetooth</dd>
+    <dt>Robotics &amp; ML</dt><dd>ROS, Linux, OpenCV, PyTorch, JAX</dd>
+    <dt>Data</dt><dd>Snowflake, Power BI, Excel, Git</dd>
+  </dl>
+</div>
+
+<section class="closing">
+  <h2>Want the one-page version?</h2>
+  <p>Everything here, condensed into my résumé.</p>
+  <div class="ctas">
+    <a class="btn-solid" href="resume.html">Résumé</a>
+    <a class="btn-outline" href="contact.html">Get in touch</a>
+  </div>
+</section>
+<footer>Ali Asjad Syed · <a href="mailto:aas459@drexel.edu">aas459@drexel.edu</a> · Philadelphia, PA</footer>
+</body>
+</html>
