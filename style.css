@@ -352,3 +352,7 @@ footer a{color:rgba(255,255,255,.8)}
 .cstatus.err{color:#b3261e}
 .contact-wrap .or{font-family:var(--head);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 @media (max-width:560px){.cform .row2{grid-template-columns:1fr}.cform{padding:20px}}
+
+/* CMOS layout tile: show the whole tall layout instead of cropping */
+.xcard .thumb.layout{background:#000}
+.xcard .thumb.layout img{object-fit:contain}

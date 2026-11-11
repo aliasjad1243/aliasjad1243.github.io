@@ -183,6 +183,30 @@
   <h2>Projects</h2>
   <div class="xgrid">
 
+    <article class="xcard" id="inverter">
+      <div class="thumb layout"><img src="assets/inverter-layout.png" alt="Physical layout of the CMOS inverter in Cadence Virtuoso" onerror="miss(this,'tile')"><span class="fallback">CMOS</span></div>
+      <div class="body">
+        <h3>CMOS Inverter: Schematic to Silicon Layout</h3>
+        <div class="org">ECE 471 (VLSI) · Cadence Virtuoso, 45 nm</div>
+        <details>
+          <summary>Learn more</summary>
+          <div class="stats">
+            <div><b>0.593 V</b><span>switching threshold (target 0.6 V)</span></div>
+            <div><b>91 / 88 ps</b><span>rise / fall time</span></div>
+            <div><b>0</b><span>DRC violations</span></div>
+          </div>
+          <ul>
+            <li>Designed a CMOS inverter in Cadence Virtuoso on the FreePDK45 45 nm process, with a 1.2 V supply driving a 5 fF load.</li>
+            <li>Ran a parametric sweep of PMOS width to make the inverter symmetric, moving the switching threshold from 0.55 V to 0.593 V against a 0.6 V target, and settled on 134 nm PMOS / 90 nm NMOS (50 nm length).</li>
+            <li>Measured 91 ps rise and 88 ps fall times and the propagation delay from transient simulations in ADE-L.</li>
+            <li>Drew the full physical layout in Virtuoso Layout Suite: transistors, power and ground rails, contacts, and metal routing.</li>
+            <li>Verified it with DRC (no violations) and LVS. LVS matched the layout to the schematic except for one stray metal7 pin-label warning, which I traced but couldn’t clear.</li>
+          </ul>
+          <p class="tools">Cadence Virtuoso · ADE-L · Calibre · FreePDK45</p>
+        </details>
+      </div>
+    </article>
+
     <article class="xcard" id="pulsewatch">
       <div class="thumb"><img src="assets/pulsewatch.png" alt="3D render of the round PulseWatch circuit board" onerror="miss(this,'tile')"><span class="fallback">PULSEWATCH</span></div>
       <div class="body">
